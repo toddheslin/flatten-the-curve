@@ -1,13 +1,13 @@
 # Flatten the Curve
 
-This is a work in progress GatsbyJS application for using time-series data from 
+This is a work in progress GatsbyJS application for using time-series data from
 - https://github.com/CSSEGISandData/COVID-19
 - https://covidtracking.com/api
 - https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases/covid-19-current-cases-details
 
-This site was initially aimed at motivating non technical or non scientific users to start taking the COVID-19 threat seriously, especially if they're in a country that currently has a low case load. 
+This site was initially aimed at motivating non technical or non scientific users to start taking the COVID-19 threat seriously, especially if they're in a country that currently has a low case load.
 
-The ability to compare your own countries current case level and see how another country's infection has spread from a similar level seems to "click" for a lot of people, and therefore motivate change. 
+The ability to compare your own countries current case level and see how another country's infection has spread from a similar level seems to "click" for a lot of people, and therefore motivate change.
 
 Since the inital launch the site has had over 10,000 visits. I am now seeing that 40% of the traffic is repeat meaning the initial goals of the project may switch into providing data hungry people better ways of viewing data, and a comprehensive area where we collate multiple segmented datasets into one.
 
@@ -36,7 +36,7 @@ I am working full time on this 2 days a week
 - ~~Create Index Page that showcases the top outbreaks in the world, using the above Graph component, and table of results~~
 - ~~Incorporate fancy styling for home page tool tip, and link to countries from tool tip~~
 - ~~Ability for site to function offline~~
-- ~~Incorporate table of regions on country page (In current us-index branch).~~ 
+- ~~Incorporate table of regions on country page (In current us-index branch).~~
 - 'connect' this table to a comparison graph.
 
 - Flip / Flop country overview graph to cumulative view.
@@ -65,7 +65,8 @@ The node data processing script may be useful for someone.
 
 ```
 cd processing
-npm install 
+npm install
+chmod +x run.sh
 sh run.sh
 ```
 Countries that show multiple provinces in the John Hopkins data are merged together and country population data is appended from `/processing/data/population_world_bank.csv`
@@ -176,7 +177,7 @@ To run local development:
 cd client
 npm install
 npm run develop
-``` 
+```
 Gatsby will automatically load the countries data into GraphQL based on the above two files
 
 
