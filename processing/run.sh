@@ -1,2 +1,2 @@
 #!/bin/bash
-node get.js ../client/data
+node main.js ../client/data
